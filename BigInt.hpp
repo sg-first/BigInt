@@ -1,6 +1,4 @@
-#ifndef BIG_INT_HPP
-#define BIG_INT_HPP
-
+#pragma once
 #include <iostream>
 
 class BigInt {
@@ -93,8 +91,6 @@ class BigInt {
         long to_long() const;
         long long to_long_long() const;
 };
-
-#endif  // BIG_INT_HPP
 
 
 /*
@@ -1683,11 +1679,6 @@ BigInt BigInt::operator--(int) {
     ===========================================================================
 */
 
-#ifndef BIG_INT_IO_STREAM_OPERATORS_HPP
-#define BIG_INT_IO_STREAM_OPERATORS_HPP
-
-
-
 /*
     BigInt from input stream
     ------------------------
@@ -1714,5 +1705,3 @@ std::ostream& operator<<(std::ostream& out, const BigInt& num) {
 
     return out;
 }
-
-#endif  // BIG_INT_IO_STREAM_OPERATORS_HPP
